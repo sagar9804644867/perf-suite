@@ -46,7 +46,7 @@ st.markdown("""
 with st.sidebar:
     st.markdown("## 🚀 Perf Suite")
     st.markdown("*by Sagar Chaudhary*")
-    st.markdown("*Performance Engineering Lead @ PwC India*")
+    st.markdown("*Performance Engineer*")
     st.markdown("---")
     st.markdown("### 🧭 Navigation")
     st.markdown("Use the **pages** above to navigate to each tool.")
@@ -261,4 +261,4 @@ with c3:
     """)
 
 st.markdown('<hr class="divider">', unsafe_allow_html=True)
-st.caption("Built by **Sagar Chaudhary** | Performance Engineering Lead @ PwC India | [Portfolio](https://sagar-portfolio-new.vercel.app) | [LinkedIn](https://linkedin.com/in/sagar-chaudhary-024254130) | [GitHub](https://github.com/sagar9804644867)")
+st.caption("Built by **Sagar Chaudhary** | Performance Engineer | [Portfolio](https://sagar-portfolio-new.vercel.app) | [LinkedIn](https://linkedin.com/in/sagar-chaudhary-024254130) | [GitHub](https://github.com/sagar9804644867)")
