@@ -201,7 +201,7 @@ def run_analysis(url, strategy, label=""):
         url = "https://" + url
 
     with st.spinner(f"🔍 Running Lighthouse analysis for {url}..."):
-        data, error = fetch_pagespeed(url, strategy, api_key=api_key if "api_key" in dir() else None)
+        data, error = fetch_pagespeed(url, strategy, api_key=api_key)
 
     if error:
         st.error(f"❌ {error}")
