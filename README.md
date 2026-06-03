@@ -6,16 +6,16 @@ The most comprehensive **free** performance testing toolkit — built by **Sagar
 
 | Tool | Description |
 |------|-------------|
-| 🔧 **JMeter AI Script Generator** | Generate JMX with full correlation engine (REST, GraphQL, CSRF, JSR223) |
-| 🧠 **Natural Language → JMeter** | Describe test in English, get complete JMX (Claude AI powered) |
-| ⚡ **LLM Performance Dashboard** | Benchmark GPT-4o, Claude, Gemini — TTFT, latency, cost |
-| 📊 **Report Generator** | Upload JTL → professional HTML report with SLO validation |
-| 🌐 **UI Performance Analyzer** | Google Lighthouse + Core Web Vitals (LCP, FCP, CLS, INP) |
-| 🎯 **SLI/SLO Calculator** | Error budget, burn rate, availability/latency/error SLOs |
-| 🔄 **JTL Comparator** | Compare 2 test runs — detect regressions and improvements |
-| 🧵 **Thread Group Calculator** | Little's Law — calculate optimal thread count from TPS |
+|  **JMeter AI Script Generator** | Generate JMX with full correlation engine (REST, GraphQL, CSRF, JSR223) |
+|  **Natural Language → JMeter** | Describe test in English, get complete JMX (Claude AI powered) |
+|  **LLM Performance Dashboard** | Benchmark GPT-4o, Claude, Gemini — TTFT, latency, cost |
+|  **Report Generator** | Upload JTL → professional HTML report with SLO validation |
+|  **UI Performance Analyzer** | Google Lighthouse + Core Web Vitals (LCP, FCP, CLS, INP) |
+|  **SLI/SLO Calculator** | Error budget, burn rate, availability/latency/error SLOs |
+|  **JTL Comparator** | Compare 2 test runs — detect regressions and improvements |
+|  **Thread Group Calculator** | Little's Law — calculate optimal thread count from TPS |
 
-## 🚀 Run Locally
+##  Run Locally
 
 ```bash
 git clone https://github.com/sagar9804644867/perf-suite
@@ -24,11 +24,11 @@ pip install -r requirements.txt
 streamlit run Home.py
 ```
 
-## 🌐 Live
+##  Live
 
 Deployed on Streamlit Cloud — accessible to all performance engineers.
 
-## 💡 What Makes This Unique
+##  What Makes This Unique
 
 - ✅ **7 tools in one place** — no switching between apps
 - ✅ **Frontend + Backend** — Lighthouse UI testing + JMeter load testing
@@ -36,7 +36,7 @@ Deployed on Streamlit Cloud — accessible to all performance engineers.
 - ✅ **100% Free** — no subscription, no sign-up, no credit card
 - ✅ **Built from real experience** — 5.6 years across PwC, TCS, Capgemini, Wipro
 
-## 📬 Contact
+##  Contact
 
 **Sagar Chaudhary** — Performance Engineering Lead  
 🌐 [Portfolio](https://sagar-portfolio-new.vercel.app)  
