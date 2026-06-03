@@ -131,6 +131,15 @@ with st.sidebar:
     st.markdown("## 🌐 UI Analyzer")
     st.markdown("*Powered by Google PageSpeed API*")
     st.markdown("---")
+    st.markdown("### 🔑 API Key")
+    api_key = st.text_input("Google API Key (optional)", type="password",
+                            placeholder="AIzaSy...",
+                            help="Get free key from console.developers.google.com → Enable PageSpeed Insights API")
+    if api_key:
+        st.success("✅ API key set!")
+    else:
+        st.warning("⚠️ No key — may hit quota limit")
+    st.markdown("---")
     st.markdown("### 📖 What it measures")
     st.markdown("""
 **Core Web Vitals:**
@@ -192,7 +201,7 @@ def run_analysis(url, strategy, label=""):
         url = "https://" + url
 
     with st.spinner(f"🔍 Running Lighthouse analysis for {url}..."):
-        data, error = fetch_pagespeed(url, strategy)
+        data, error = fetch_pagespeed(url, strategy, api_key=api_key if "api_key" in dir() else None)
 
     if error:
         st.error(f"❌ {error}")
