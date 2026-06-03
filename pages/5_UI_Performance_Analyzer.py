@@ -52,10 +52,12 @@ def metric_status(value, good_threshold, poor_threshold, unit="s", lower_is_bett
 def fetch_pagespeed(url, strategy="mobile"):
     """Fetch Google PageSpeed Insights API data"""
     api_url = f"https://www.googleapis.com/pagespeedonline/v5/runPagespeed"
+    api_key = st.sidebar.text_input("Google API Key (optional)", type="password", help="Get free key from console.developers.google.com")
     params = {
         "url": url,
         "strategy": strategy,
-        "category": ["performance", "accessibility", "best-practices", "seo"]
+        "category": ["performance", "accessibility", "best-practices", "seo"],
+        "key": api_key if api_key else None
     }
     try:
         resp = requests.get(api_url, params=params, timeout=60)
