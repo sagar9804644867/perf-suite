@@ -196,7 +196,7 @@ with col_c2:
     compare_btn = st.button("🔄 Compare Both", use_container_width=True)
 
 # ── Analysis ───────────────────────────────────────────────────
-def run_analysis(url, strategy, label=""):
+def run_analysis(url, strategy, label="", api_key=None):
     if not url.startswith("http"):
         url = "https://" + url
 
@@ -302,15 +302,15 @@ def run_analysis(url, strategy, label=""):
     return scores, metrics
 
 if analyze_btn and url_input:
-    result = run_analysis(url_input, strategy)
+    result = run_analysis(url_input, strategy, api_key=api_key)
 
 elif compare_btn and url_input and compare_url:
     st.markdown("---")
     col_r1, col_r2 = st.columns(2)
     with col_r1:
-        r1 = run_analysis(url_input, strategy, "🔵 URL 1")
+        r1 = run_analysis(url_input, strategy, "🔵 URL 1", api_key=api_key)
     with col_r2:
-        r2 = run_analysis(compare_url, strategy, "🟠 URL 2")
+        r2 = run_analysis(compare_url, strategy, "🟠 URL 2", api_key=api_key)
 
     if r1 and r2:
         st.markdown("---")
